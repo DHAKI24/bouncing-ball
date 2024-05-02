@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+<style>
+	
+	
+	
+	.circle
+	{
+		background : #81C341;
+  		background : rgba(129, 195, 65, 1);
+  		border-style : Solid;
+ 		border-color : #231F20;
+ 		border-color : rgba(35, 31, 32, 1);
+  		border-width : 1px;
+	}
+	
+	
+	
+	
+	
+	
+	.ball
+	{
+		color: white;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: red;
+		animation: ball 7s ease-in-out 0s infinite;
+		float: left;
+	}
+	
+	@keyframes ball
+	{
+		from
+		{
+			margin: 0;
+		}
+		
+		10%
+		{
+			margin: 600px 0 0 0;
+		}
+		
+		20%
+		{
+			margin-top:200px;
+		}
+		
+		30%
+		{
+			margin:600px 0 0 300px;
+		}
+		
+		40%
+		{
+			margin-top:300px;
+		}
+		
+		50%
+		{
+			margin:600px 0 0 600px;
+		}
+		
+		60%
+		{
+			margin-top:400px;
+		}
+		
+		70%
+		{
+			margin: 600px 0 0 800px
+		}
+		
+		80%
+		{
+			margin-top: 500px;
+		}
+		
+		90%
+		{
+			margin: 600px 0 0 900px;
+		}
+		 
+		to
+		{
+			margin: 600px 0 0 1000px;
+		}
+		
+	}
+	
+	.land
+	{
+		width: 100%;
+		height: 200px;
+		background-color: darkgoldenrod;
+		position: fixed;
+		margin-top: 650px;
+		text-align: center;
+		
+	}
+	
+	
+	.text
+	{
+		margin: auto;
+		margin-top: 20px;
+		font-size: 50px;
+		font-family: arial;
+		font-weight: bold;
+		animation: text 7s ease-in-out 0s infinite alternate;
+	}
+	
+	@keyframes text
+	{
+		from
+		{
+			color: red;
+		}
+		
+		20%
+		{
+			color: blue;
+		}
+		
+		40%
+		{
+			color: violet;
+		}
+		
+		60%
+		{
+			color: green;
+		}
+		
+		80%
+		{
+			color: yellow;
+		}
+		
+		to
+		{
+			color: red;
+		}
+	}
+	
+	
+	
+	
+	
+</style>	
+
+</head>
+
+<body>
+	<div class="ball">
+	</div>
+	<div class="land">
+		<div class="text">The Bouncing ball</div>
+	</div>
+	
+	<div class="circle"></div>
+</body>
+</html>
